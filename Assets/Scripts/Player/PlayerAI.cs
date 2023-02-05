@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerAI : MonoBehaviour
 {
@@ -23,9 +24,16 @@ public class PlayerAI : MonoBehaviour
             healthHEAT -= Time.deltaTime; //Cooling down...
         }
         if (PlayerHealth <= 0) //If the player's health gets to zero, it dies.
+        {
             Destroy(this.gameObject);
+            Restart();
+        }
     }
-
+    public IEnumerator Restart()
+    {
+        yield return new WaitForSeconds(2F);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 
 }
 
