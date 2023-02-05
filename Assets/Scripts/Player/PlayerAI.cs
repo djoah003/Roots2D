@@ -22,7 +22,7 @@ public class PlayerAI : MonoBehaviour
         {
             healthHEAT -= Time.deltaTime; //Cooling down...
         }
-        if (PlayerHealth == 0) //If the player's health gets to zero, it dies.
+        if (PlayerHealth <= 0) //If the player's health gets to zero, it dies.
             Destroy(this.gameObject);
     }
 

@@ -8,17 +8,20 @@ public class BulletScript : MonoBehaviour
     public GameObject Enemy; //Get enemy.
     public EnemyAI EnemyScript;//Get enemy script.
 
-
-    void OnCollisionEnter(Collision collision)
+    private void Start()
     {
-        if (collision.gameObject.tag == "Enemy")
+        Destroy(gameObject, 2f);
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Enemy")
         {
-        Enemy = collision.gameObject;
+        Enemy = col.gameObject;
         EnemyScript = Enemy.GetComponent<EnemyAI>(); //Gets the enemy's script.
         EnemyScript.Health -= BulletDamage;
         Destroy(this.gameObject);
         }
-
     }
 
 
