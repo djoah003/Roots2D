@@ -8,7 +8,10 @@ public class BulletScript : MonoBehaviour
     public GameObject Enemy; //Get enemy.
     public EnemyAI EnemyScript;//Get enemy script.
 
-
+    private void Start()
+    {
+        Destroy(gameObject, 2f);
+    }
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -19,7 +22,6 @@ public class BulletScript : MonoBehaviour
         EnemyScript.Health -= BulletDamage;
         Destroy(this.gameObject);
         }
-
     }
 
 
