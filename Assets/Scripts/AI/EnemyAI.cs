@@ -39,9 +39,9 @@ public class EnemyAI : MonoBehaviour
             Destroy(this.gameObject);
     }
 
-    void OnCollisionStay(Collision collision)
+    void OnCollisionStay2D(Collision2D col)
     {
-        if (collision.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
             if (healthHEAT <= 0) //Delay between actions.
             {
