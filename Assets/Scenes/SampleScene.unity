@@ -533,7 +533,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279161171}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1.49}
   m_LocalScale: {x: 6.43431, y: 6.43431, z: 6.43431}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -680,7 +680,7 @@ Camera:
   far clip plane: 1000
   field of view: 48
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -704,7 +704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -31.91}
+  m_LocalPosition: {x: 0, y: 0, z: -16.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -974,7 +974,7 @@ MonoBehaviour:
   EnemyIncrement: 0.5
   x_pos: 0
   y_pos: 0
-  y: 0
+  z: -1
   SecondsDelay_Wave: 30
   SecodsDelay_Ambush: 10
   timer: 0
@@ -1950,7 +1950,7 @@ MonoBehaviour:
   EnemyIncrement: 0.5
   x_pos: 0
   y_pos: 0
-  y: 0
+  z: -1
   SecondsDelay_Wave: 30
   SecodsDelay_Ambush: 10
   timer: 0
@@ -2215,7 +2215,7 @@ MonoBehaviour:
   EnemyIncrement: 0.5
   x_pos: 0
   y_pos: 0
-  y: 0
+  z: -1
   SecondsDelay_Wave: 30
   SecodsDelay_Ambush: 10
   timer: 0
@@ -2547,7 +2547,7 @@ MonoBehaviour:
   EnemyIncrement: 0.5
   x_pos: 0
   y_pos: 0
-  y: 0
+  z: -1
   SecondsDelay_Wave: 30
   SecodsDelay_Ambush: 10
   timer: 0

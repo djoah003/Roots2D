@@ -11,7 +11,7 @@ public class SpawnerScript : MonoBehaviour
     public float EnemyMultiplier = 1; //Multiplies the enemy spawn amount.
     public float EnemyIncrement = 0; //Adds to the EnemyMultiplier after each wave.
     public float x_pos, y_pos; //Modifiable float, that can change the spawn distance from the spawn centre.
-    public float y; //Set default.
+    public float z; //Set default.
     public float SecondsDelay_Wave = 60, SecodsDelay_Ambush = 20;
     private Vector2 SpawnerPos;
 
@@ -72,6 +72,9 @@ public class SpawnerScript : MonoBehaviour
     private void InstantiateEnemy()
     {
         //Randombly spawns enemy within a set area. The area is set with x_pos & z_pos as offsets from the spawners centre. 
-        Instantiate(Enemy, new Vector2(Random.Range(SpawnerPos.x-x_pos, SpawnerPos.x + x_pos), Random.Range(SpawnerPos.y - y_pos, SpawnerPos.y + y_pos)), this.gameObject.transform.rotation);
+        Instantiate(Enemy, new Vector3(Random.Range(SpawnerPos.x-x_pos, SpawnerPos.x + x_pos),
+                                       Random.Range(SpawnerPos.y - y_pos, SpawnerPos.y + y_pos),
+                                       z),
+                                       this.gameObject.transform.rotation);
     }
 }
