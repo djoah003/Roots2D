@@ -31,9 +31,9 @@ public class EnemyAI : MonoBehaviour
         }
 
         //get the distance between the player and enemy.
-        float dist = Vector3.Distance(PlayerLocation.position, transform.position);
+        float dist = Vector2.Distance(PlayerLocation.position, transform.position);
         //Move to player location.
-        transform.position = Vector3.MoveTowards(transform.position, PlayerLocation.transform.position, Speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, PlayerLocation.transform.position, Speed * Time.deltaTime);
 
         if(Health == 0) //When health reaches zero.
             Destroy(this.gameObject);
