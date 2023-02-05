@@ -965,7 +965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7209c91fa07de4df886aa060de893e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: -5878450728706154023, guid: d40d8768e825f44caa15cc7f696585c8, type: 3}
+  Enemy: {fileID: 2008348473844666849, guid: 6aee1828d9f7d6f4cba11949098e418a, type: 3}
   WaveEnemyAmount: 0
   AmbushEnemyAmount: 0
   WaveCount: 10
@@ -1941,7 +1941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7209c91fa07de4df886aa060de893e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: -5878450728706154023, guid: d40d8768e825f44caa15cc7f696585c8, type: 3}
+  Enemy: {fileID: 2008348473844666849, guid: 6aee1828d9f7d6f4cba11949098e418a, type: 3}
   WaveEnemyAmount: 0
   AmbushEnemyAmount: 0
   WaveCount: 10
@@ -2206,7 +2206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7209c91fa07de4df886aa060de893e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: -5878450728706154023, guid: d40d8768e825f44caa15cc7f696585c8, type: 3}
+  Enemy: {fileID: 2008348473844666849, guid: 6aee1828d9f7d6f4cba11949098e418a, type: 3}
   WaveEnemyAmount: 0
   AmbushEnemyAmount: 0
   WaveCount: 10
@@ -2538,7 +2538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7209c91fa07de4df886aa060de893e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: -5878450728706154023, guid: d40d8768e825f44caa15cc7f696585c8, type: 3}
+  Enemy: {fileID: 2008348473844666849, guid: 6aee1828d9f7d6f4cba11949098e418a, type: 3}
   WaveEnemyAmount: 0
   AmbushEnemyAmount: 0
   WaveCount: 10
