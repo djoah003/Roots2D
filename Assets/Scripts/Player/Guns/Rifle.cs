@@ -7,7 +7,7 @@ public class Rifle : MonoBehaviour
     public GameObject Bullet; //Bullet, that we want to shoot.
                               // public Rigidbody Bulletrb; //Bullet's rigidbody.
     public GameObject GunBarrel; //Gun, from where we want the bullets to be shot from.
-    private Vector3 GunBarrelPos; //Setup for transform ---> Vector 3
+    private Vector2 GunBarrelPos; //Setup for transform ---> Vector 3
     private float GunHeat;
 
     void Start()
@@ -40,7 +40,7 @@ public class Rifle : MonoBehaviour
     void Shoot()
     {
         GameObject ShotBullet = Instantiate(Bullet, GunBarrelPos, transform.rotation);
-        ShotBullet.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+        ShotBullet.GetComponent<Rigidbody2D>().AddForce(transform.forward * 1000);
     }
 
 }
