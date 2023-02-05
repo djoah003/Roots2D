@@ -25,14 +25,15 @@ public class PlayerAI : MonoBehaviour
         }
         if (PlayerHealth <= 0) //If the player's health gets to zero, it dies.
         {
-            Destroy(this.gameObject);
+        SceneManager.LoadScene(0);
             Restart();
+            Destroy(this.gameObject);
         }
     }
     public IEnumerator Restart()
     {
-        yield return new WaitForSeconds(2F);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        yield return new WaitForSeconds(2f);
+        
     }
 
 }
